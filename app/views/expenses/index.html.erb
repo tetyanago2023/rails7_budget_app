@@ -8,7 +8,20 @@
     <%= link_to "New expense", new_expense_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
   </div>
 
-  <div id="expenses" class="min-w-full">
-    <%= render @expenses %>
+  <div id="expenses" class="table w-full p-2">
+    <table class="w-full border-b bg-gray-100">
+      <thead class="bg-blue-600 text-white">
+      <tr>
+        <th class="w-1/4 text-middle border-r py-3 px-4 uppercase font-semibold text-sm">Date</th>
+        <th class="w-1/4 text-middle border-r py-3 px-4 uppercase font-semibold text-sm">Name</th>
+        <th class="text-middle border-r py-3 px-4 uppercase font-semibold text-sm">Amount</th>
+        <th class="text-middle border-r py-3 px-4 uppercase font-semibold text-sm">Description</th>
+        <th class="text-middle border-r py-3 px-4 uppercase font-semibold text-sm">Action</th>
+      </tr>
+      </thead>
+      <tbody class="text-gray-700">
+        <%= render @expenses %>
+      </tbody>
+    </table>
   </div>
 </div>
