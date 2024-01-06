@@ -1,8 +1,8 @@
 <div class="mx-auto md:w-2/3 w-full">
-  <h1 class="font-bold text-4xl">Editing expense</h1>
+  <h1 class="font-bold text-4xl text-teal-800">Editing expense</h1>
 
   <%= render "form", expense: @expense %>
 
-  <%= link_to "Show this expense", @expense, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-  <%= link_to "Back to expenses", expenses_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  <%= link_to "Show this expense", @expense, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:shadow-lg inline-block text-amber-400 text-sm font-medium" %>
+  <%= link_to "Back to expenses", expenses_path, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:shadow-lg inline-block text-amber-400 text-sm font-medium" %>
 </div>
