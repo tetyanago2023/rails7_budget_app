@@ -1,8 +1,8 @@
   <tr id="<%= dom_id expense %>" class="bg-gray-50">
     <td class="text-center border-r border-b py-3 px-4"><%= expense.date %></td>
-    <td class="text-left border-r border-b py-3 px-4"><%= expense.name %></td>
+    <td class="min-w-40 text-left border-r border-b py-3 px-4"><%= expense.name.truncate(20) %></td>
     <td class="text-right border-r border-b py-3 px-4"><%= expense.amount %></td>
-    <td class="text-left border-r border-b py-3 px-4"><%= expense.description %></td>
+    <td class="min-w-64 text-left border-r border-b py-3 px-4"><%= expense.description.truncate(30) %></td>
     <td class="text-center border-r border-b py-3 px-4 flex justify-between items-center">
       <%= link_to "Edit expense", edit_expense_path(expense), class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:shadow-lg inline-block text-amber-400 text-sm font-medium" %>
       <%= button_to "Delete expense", expense_path(expense), method: :delete, data: {turbo_confirm: 'Are you sure?'}, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-3 text-amber-400 hover:shadow-lg inline-block text-amber-400 text-sm font-medium" %>
