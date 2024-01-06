@@ -5,5 +5,6 @@
     <td class="text-left border-r border-b py-3 px-4"><%= expense.description %></td>
     <td class="text-center border-r border-b py-3 px-4"><%= link_to "Show expense", expense, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-3 text-white hover:shadow-lg inline-block text-amber-400 text-sm font-medium" %>
       <%= link_to "Edit expense", edit_expense_path(expense), class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-white hover:shadow-lg inline-block text-amber-400 text-sm font-medium" %>
+      <%= button_to "Delete expense", expense_path(expense), method: :delete, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-white hover:shadow-lg inline-block text-amber-400 text-sm font-medium" %>
     </td>
   </tr>
