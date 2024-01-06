@@ -14,7 +14,7 @@
       <tr>
         <th class="w-1/4 text-middle text-amber-400 border-r py-3 px-4 uppercase font-semibold text-sm">Date</th>
         <th class="w-1/4 text-middle text-amber-400 border-r py-3 px-4 uppercase font-semibold text-sm">Name</th>
-        <th class="text-middle text-amber-400 border-r py-3 px-4 uppercase font-semibold text-sm">Amount</th>
+        <th class="text-middle text-amber-400 border-r py-3 px-4 uppercase font-semibold text-sm">Amount, $</th>
         <th class="text-middle text-amber-400 border-r py-3 px-4 uppercase font-semibold text-sm">Description</th>
         <th class="text-middle text-amber-400 border-r py-3 px-4 uppercase font-semibold text-sm">Action</th>
       </tr>
@@ -22,6 +22,7 @@
       <tbody class="text-gray-700">
         <%= render @expenses %>
       </tbody>
+      <%= @expenses_by_day %>
     </table>
   </div>
 </div>
