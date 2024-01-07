@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+# Create expenses for all months
+(1..12).each do |month|
+  Expense.create(
+    date: Date.new(2024, month, rand(1..28)),
+    name: "Expense for #{Date::MONTHNAMES[month]}",
+    amount: rand(100),
+    description: "#{Date::MONTHNAMES[month]} expenses description"
+  )
+end
+
