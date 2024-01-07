@@ -6,10 +6,10 @@
 
     <%= render "show_expense", expense: @expense %>
 
-    <%= link_to "Edit this expense", edit_expense_path(@expense), class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:bg-teal-600 inline-block text-amber-400 text-sm font-medium" %>
+    <%= link_to "Edit this expense", edit_expense_path(@expense), class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:bg-teal-600 inline-block text-sm font-medium" %>
     <div class="inline-block ml-2">
-      <%= button_to "Destroy this expense", expense_path(@expense), method: :delete, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:bg-teal-600 inline-block text-amber-400 text-sm font-medium" %>
+      <%= button_to "Destroy this expense", expense_path(@expense), method: :delete, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:bg-teal-600 inline-block text-sm font-medium" %>
     </div>
-    <%= link_to "Back to expenses", expenses_path, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:bg-teal-600 inline-block text-amber-400 text-sm font-medium" %>
+    <%= link_to "Back to expenses", expenses_path, class: "rounded-lg bg-teal-800 border py-3 ml-2 px-4 text-amber-400 hover:bg-teal-600 inline-block text-sm font-medium" %>
   </div>
 </div>

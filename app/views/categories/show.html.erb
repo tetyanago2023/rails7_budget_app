@@ -4,12 +4,13 @@
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
 
+    <h1 class="font-bold text-4xl text-teal-800">Category</h1>
     <%= render @category %>
 
-    <%= link_to "Edit this category", edit_category_path(@category), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this category", edit_category_path(@category), class: "mt-2 rounded-lg py-3 px-5 bg-teal-800 text-amber-400 hover:bg-teal-600 inline-block font-medium" %>
     <div class="inline-block ml-2">
-      <%= button_to "Destroy this category", category_path(@category), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      <%= button_to "Destroy this category", category_path(@category), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-teal-800 text-amber-400 hover:bg-teal-600 font-medium" %>
     </div>
-    <%= link_to "Back to categories", categories_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Back to categories", categories_path, class: "ml-2 rounded-lg py-3 px-5 bg-teal-800 text-amber-400 hover:bg-teal-600 inline-block font-medium" %>
   </div>
 </div>
